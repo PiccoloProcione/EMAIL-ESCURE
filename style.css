@@ -1,0 +1,439 @@
+/*
+ MailWatch for MailScanner
+ Copyright (C) 2003  Steve Freegard (smf@f2s.com)
+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ 
+ Modified by Libra Esva 2008-2011
+*/
+/*
+table.mail {
+	background-color: #EBEBEB;
+}
+
+html.splash table.mail {
+    border-bottom: 2px solid #829c5d;
+    width: 700px;
+}
+
+html.splash table.mail td {
+    padding: 5px 10px;
+}
+
+TABLE.mail td {
+	position:relative;
+	vertical-align:middle;
+}
+
+TABLE.mail td p {
+	position:relative;
+	top:0px;
+} 
+                                
+TABLE.mail TH, TABLE.boxtable TH, TABLE.maildetail TH {
+ font-weight: bold;
+ text-align: center;
+ color: white;
+ background-color: #829c5d; 
+ -moz-border-radius:3px;
+ -webkit-border-bottom:3px;
+ border-radius:3px
+
+}
+
+TABLE.mail TH A {
+ font-weight: bold;
+ text-align: center;
+ color: white;
+ background-color: #829c5d;
+}
+
+TABLE.mail TH A:HOVER {
+# background-color: #6699CC;
+ color: black;
+# display: block;
+}
+
+TABLE.mail TR, TABLE.sophos TR, TABLE.sa_rules_report TR {
+ font-size: 8pt;
+ #background-color: #EBEBEB;
+}
+
+TABLE.sa_rules_report TH {
+ text-align: left;
+}
+
+div.dgMainDiv tr.released {
+# background-color: #FFEFD5;
+ background-color: #DDA0DD;
+ color: black;
+}
+
+div.dgMainDiv tr.infected {
+ background-color: #B22222;
+ color: white;
+}
+
+div.dgMainDiv tr.fileblocked {
+ background-color: #527C94;
+ color: white;
+}
+
+div.dgMainDiv tr.spam {
+# background-color: #ffdd54;
+ background-color: #ffff88;
+ color: black;
+}
+
+div.dgMainDiv tr.highspam {
+# background-color: #EE6262;
+ background-color: #ff7755;
+ color: white;
+}
+
+div.dgMainDiv tr.mcp {
+ background-color: lightblue;
+ color: black;
+}
+
+div.dgMainDiv tr.highmcp {
+ background-color: darkblue;
+ color: white;
+}
+
+div.dgMainDiv tr.whitelisted {
+# background-color: #7bf47b;
+ background-color: #bbff99;
+ color: black;
+}
+
+div.dgMainDiv tr.blacklisted {
+ color: white;
+ background-color: gray;
+}
+
+div.dgMainDiv tr.smtprejected {
+ color: black;
+ background-color: burlywood;
+}
+
+TABLE.mail, TABLE.maildetail, TABLE.navigation, TABLE.boxtable {
+# border: 1px solid black;
+}
+*/
+.navigation {
+ font-weight: bold;
+}
+
+.navigation A {
+ color: black;
+ background-color: #3399FF;
+ display: block;
+ width: 100%;
+}
+
+.navigation A:visited {
+ color: black;
+}
+
+.navigation A:HOVER {
+# background-color: #3399FF;
+ color: white;
+# display: block;
+}
+/*
+TD.heading {
+ background-color: #829c5d;
+ font-weight: bold;
+ #font-size: 10pt;
+ color: white; 
+}
+
+TABLE.maildetail TD.detail {
+ background-color: #EBEBEB;
+ font-size: 8pt;
+}
+
+SPAN.NO {
+ background-color: #829c5d;
+ color: white;
+ font-weight: bold;
+}
+
+SPAN.YES {
+ background-color: red;
+ color: white;
+ font-weight: bold;
+}
+
+A {
+ text-decoration: none;
+# color: black; 
+}
+
+A:visited {
+ text-decoration: none;
+# color: black;
+
+}
+
+A:hover {
+ text-decoration: underline;
+}
+
+TABLE.boxtable TR {
+ border-bottom: 1px solid black;
+}
+
+TABLE.boxtable td {
+    padding: 3px 5px;
+}
+TABLE.boxtable tr:last-child td {
+    padding-bottom: 2em;
+}
+*/
+
+/* Lint */
+TD.lint_1 {
+ background-color: green;
+ color: white;
+ text-align: right;
+}
+
+TD.lint_2 {
+ background-color: yellow;
+ color: black;
+ text-align: right;
+}
+
+TD.lint_3 {
+ background-color: orange;
+ color: black;
+ text-align: right;
+}
+
+TD.lint_4 {
+ background-color: orangered;
+ color: black;
+ text-align: right;
+}
+
+TD.lint_5 {
+ background-color: red;
+ color: black;
+ text-align: right;
+}
+/*
+div.w1{background:#829c5d url(pic/w_left_top.gif) no-repeat; width:100%;  font-weight: bold;text-align: center;color: white;}
+div.w2{background:url(pic/w_right_top.gif) no-repeat top right;}
+div.w3{background:url(pic/w_left_bottom.gif) no-repeat left bottom;}
+div.w4{background:url(pic/w_right_bottom.gif) no-repeat right bottom; padding:4px;}
+
+div.w1-2{background:#999999 url(pic/w_left_top_2.gif) no-repeat; width:100%;  font-weight: bold;text-align: center;color: white;}
+div.w2-2{background:url(pic/w_right_top_2.gif) no-repeat top right;}
+div.w3-2{background:url(pic/w_left_bottom_2.gif) no-repeat left bottom;}
+div.w4-2{background:url(pic/w_right_bottom_2.gif) no-repeat right bottom; padding:4px;}
+
+.list1 {
+	list-style-image: url("/images/arrow_green.png");
+}
+
+input.esvabutton
+{
+    -moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+    box-shadow:inset 0px 1px 0px 0px #fff6af;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23) );
+    background:-moz-linear-gradient( center top, #ffec64 5%, #ffab23 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
+    background-color:#ffec64;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    color:#333333;
+    font-family:Arial;
+    font-size:11px;
+    font-weight:bold;
+    padding:1px 13px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #ffee66;
+}
+input.esvabutton:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64) );
+    background:-moz-linear-gradient( center top, #ffab23 5%, #ffec64 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
+    background-color:#ffab23;
+}
+input.esvabutton:active {
+    position:relative;
+    top:1px;
+}
+
+fieldset {
+	-moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.login {
+	background-color: #e8f3e5;
+}
+.login TH {
+ background: #64b15f;
+ color: #ffffff;
+ padding: 2px 0;
+ -moz-border-radius:3px;
+ -webkit-border-bottom:3px;
+ border-radius:3px
+}
+
+.login TD, .login TR {
+	font-family: "Trebuchet MS",Trebuchet,sans-serif;
+	font-size: 8pt;
+}
+*/
+textarea{
+    resize: none;
+   
+}
+
+/*Class for rounded input text boxes*/
+
+input.rounded {
+
+  border: 1px solid #ccc;
+   
+  /* Safari 5, Chrome support border-radius without vendor prefix.
+   * FF 3.0/3.5/3.6, Mobile Safari 4.0.4 require vendor prefix.
+   * No support in Safari 3/4, IE 6/7/8, Opera 10.0.
+   */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  
+  /* Chrome, FF 4.0 support box-shadow without vendor prefix.
+   * Safari 3/4/5 and FF 3.5/3.6 require vendor prefix.
+   * No support in FF 3.0, IE 6/7/8, Opera 10.0, iPhone 3.
+   * change the offsets, blur and color to suit your design.
+   */
+  /*-moz-box-shadow: 2px 2px 3px #666;
+  -webkit-box-shadow: 2px 2px 3px #666;
+  box-shadow: 2px 2px 3px #666;
+  
+  /* using a bigger font for demo purposes so the box isn't too small */
+  font-size: 12px;
+  
+  /* with a big radius/font there needs to be padding left and right
+   * otherwise the text is too close to the radius.
+   * on a smaller radius/font it may not be necessary
+   */
+  padding: 2px 4px;
+  
+  /* only needed for webkit browsers which show a rectangular outline;
+   * others do not do outline when radius used.
+   * android browser still displays a big outline
+   */
+  outline: 0;
+
+  /* this is needed for iOS devices otherwise a shadow/line appears at the
+   * top of the input. depending on the ratio of radius to height it will
+   * go all the way across the full width of the input and look really messy.
+   * ensure the radius is no more than half the full height of the input, 
+   * and the following is set, and everything will render well in iOS.
+   */
+  -webkit-appearance: none;
+}
+
+
+
+
+/*Wizard CSS Settings*/
+.wizard {
+    font-family: Tahoma, sans-serif;
+    /* -- font-size: 11px; -- */
+}
+
+/* --
+.dropdown {
+    font-family: Tahoma, sans-serif;
+    font-size: 11px; 
+    background: transparent;
+    width: 590px;
+    padding: 1px;
+    font-size: 11px;
+    border: 1px solid #ccc;
+    height: 21px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: 0;    
+}
+*/
+TABLE.wizard td { 
+    position:relative;
+    vertical-align:middle;
+    padding: 2px;
+} 
+
+TABLE.wizard td.bold {
+  font-weight:bold;
+}                  
+
+TABLE.wizard tr.fixed {
+    height: 0px;
+}              
+
+TABLE.wizard tr {
+    height: 28px;
+}              
+TABLE.wizard TH {
+ font-weight: bold;
+ text-align: center;
+ color: white;
+ background-color: #829c5d; 
+ -moz-border-radius:3px;
+ -webkit-border-bottom:3px;
+ border-radius:3px
+
+}
+
+textarea.wizard {
+    width: 700px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+    -moz-border-radius:3px;
+ -webkit-border-bottom:3px;
+ border-radius:3px  
+}
+/*
+img {
+    border: 0;
+}
+
+#body img {
+	vertical-align: baseline;
+}
+
+.disabledbutton {
+    background: #ddd;
+    color: #bbb;
+    border: #444;    
+}
+*/
