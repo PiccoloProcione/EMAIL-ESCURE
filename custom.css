@@ -1,0 +1,636 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Login/Logout pages */
+table.login .esvabutton {
+	margin-bottom: 2em;
+}
+
+table.login .alert {
+	width: 50%;
+	margin: 10px;
+}
+
+table.login tr:first-child p:first-child {
+	margin: 1.5em 0;
+}
+
+
+/* Navigations menus */
+ul.nav-tabs.primary-navbar {
+	margin-bottom: 0;
+}
+
+ul.nav-pills.secondary-navbar {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #ebebeb;
+}
+ 
+.logo {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.social-icons {
+	position: absolute;
+	right: 0;
+	top: 7px;
+	z-index: 100;
+}
+
+.social-icons .nav > li > a {
+    border-radius: 13px;
+    color: #ffffff;
+    height: 26px;
+    margin-right: 5px;
+    padding: 5px 0 0 7px;
+    width: 26px;
+	background-color: #56ac43;
+}
+
+.social-icons .nav > li > a:hover {
+	background-color: #ebebeb;
+	color: #56ac43;
+}
+
+.license {
+	border: none;
+	border-radius: 0px;
+	display: block;
+    margin: 0;
+    padding: 3px 18px;
+}
+
+/* Footer line */
+#body ~ .row .footer-line {
+	border-top: 3px solid #56ac43;
+}
+.container > #msg ~ .row .footer-line {
+	border-top: 3px solid #56ac43;
+}
+
+/* Footer navigation */
+.footer-nav {
+	margin-top: 4px;
+}
+.footer-nav > div {
+	background-color: #56ac43;
+	text-align: center;
+	border-radius: 4px;
+}
+.footer-nav > .btn:first-child {
+	float: left;
+	width: 49.5%;
+}
+.footer-nav > .btn:last-child {
+	float: right;
+	width: 49.5%;
+}
+.footer-nav a {
+	color: #fff;
+}
+
+/* Dashboard */
+.sidebar-widget, .main-widget {
+    padding: 1px;
+	position: relative;
+}
+
+.sidebar-widget .panel-body, .main-widget .panel-body {
+    padding: 4px 2px 4px 4px;
+}
+
+.sidebar-widget {
+	min-width: 245px;
+	float: left;
+}
+
+.main-widget {
+	min-width: 660px;
+	float: right;
+}
+
+#clustermonitor .version,
+#clustermonitor .loading,
+#clustermonitor .version-info {
+	text-align: center;
+	vertical-align: bottom;
+}
+
+#clustermonitor .version {
+	height: 17px;
+}
+
+#clustermonitor .version-info {
+	line-height: 80px;
+	min-height: 87px;
+}
+
+#status-monitor .panel-body {
+	min-height: 85px;
+}
+
+/* Reports */
+div#statistics TABLE.BOXTABLE TD,
+div#reports TABLE.BOXTABLE TD,
+div#schedule TABLE.BOXTABLE TR:last-child TD {
+	padding: 5px 7px 5px 5px;
+}
+
+div#schedule TABLE.BOXTABLE TD {
+	padding: 5px 7px 0px 5px;
+}
+
+#table_div {
+	padding-bottom: 1.5em;
+}
+
+ul.list1, ul.list2 {
+	list-style-position: outside;
+	padding-left: 20px;
+}
+
+ul.list1 {
+	list-style-image: url("/images/arrow_green.png");
+}
+
+ul.list2 {
+	list-style-image: url("/images/arrow_orange.gif");
+}
+
+/* Alert boxes*/
+div.alert {
+	margin: 5px auto 10px;
+}
+div.alert ~ table tr:last-child td {
+	padding-bottom: 1.5em;
+}
+table.login div.alert-success {
+	background-color: transparent;
+	border-color: transparent;
+	color: inherit;
+}
+
+/* Generic rules */
+a, a:visited  {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.dgLinks {
+    color: inherit;
+}
+
+p {
+    margin: 10px;
+}
+
+p:last-child {
+	margin-bottom: 15px;
+}
+
+.ui-dialog p {
+	margin: 7px 0;
+}
+
+img {
+    border: 0;
+}
+
+#body img {
+	vertical-align: baseline;
+}
+
+input, select {
+	margin: 2px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    vertical-align: middle;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+form#bakcup_form .clearfix > div,
+form#ScheduledBackup .clearfix > div {
+	padding: 10px;
+}
+
+form#bakcup_form .clearfix > div:first-child,
+form#ScheduledBackup .clearfix > div:first-child {
+	float: left;
+	width: 47%;
+	line-height: 1.45em;
+}
+
+form#bakcup_form .clearfix > div:last-child,
+form#ScheduledBackup .clearfix > div:last-child {
+	float: right;
+	width: 52%;
+}
+
+form#bakcup_form div.clearfix div.alert,
+form#ScheduledBackup div.clearfix div.alert {
+	font-size: inherit;
+}
+
+form#bakcup_form div.clearfix input[type="text"],
+form#ScheduledBackup div.clearfix input[type="text"],
+form#ScheduledBackup div.clearfix input[type="password"] {
+	width: 100%;
+}
+
+/*
+#nettabs > div.ui-tabs-panel br:first-child,
+#nettabs table.mail ~ br,
+#enctabs fieldset ~ br {
+	display: none;
+}
+*/
+
+div.float {
+	height: 50px;
+}
+
+div#bottom_filter {
+	height: 80px;
+}
+
+form#ScheduledBackup {
+	display: inline-block;
+}
+
+#body > form {
+	padding-bottom: 0.3em;
+}
+
+.dgMainDiv {
+	padding-bottom: 1.5em;
+	padding-top: 6px;
+}
+
+.mail + div .dgMainDiv {
+	padding-top: 0;
+}
+
+.dgMainDiv > div {
+	/*margin: 0 auto;*/
+}
+
+div.DG_subdivxport > div > table[style]:first-child,
+div.DG_subdivxport > div > table tr:last-child td {
+	border-color: transparent !important;
+}
+
+/* Table & td tags */
+.dgTable {
+	/*margin: 0 auto;*/	
+}
+
+div.dgTable form {
+	margin-bottom: 10px;	
+}
+
+table.dgTable tbody td:first-child {
+	white-space: nowrap;
+}
+
+.dgInnerDiv .dg_dataTable tfoot tr th input {
+    color: #333;
+}
+
+.dgTable td.dgTitles {
+    border-left: 1px solid #cccccc;
+}
+
+.dgMainDiv > div > .dgTable {
+	border-width: 0 1px 1px;
+	border-style: solid;
+	border-color: #ddd;
+}
+
+#instancesTable {
+	margin: 0 auto;
+	width: 98%;
+}
+
+#instancesTable th {
+	text-align: center;
+	padding: 5px;
+}
+
+#instancesTable td {
+	line-height: 28px;
+}
+
+#locrbltabs-1 form > table {
+	margin-left: 10px;
+}
+
+#texttab-1 table.mail:nth-child(3) {
+	border-top: 1px solid #ccc;
+}
+
+#texttab-1 table.mail:nth-child(2) td {
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+
+#texttab-1 table.mail:nth-child(3) td {
+	padding-top: 1.5em;
+}
+
+#mtatabs div.ui-tabs-panel .mail ~ .mail > tbody > tr:first-child > td {
+	padding: 0;
+}
+
+table.sa_rules_report td.detail {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.container-fluid table.mail td {
+	height: auto;
+}
+
+table.maildetail  tbody tr:first-child td {
+	padding-top: 5px;
+}
+
+#body table.mail td:first-child,
+#body table.BOXTABLE td:first-child,
+#body table.mail td[rowspan]:first-child + td,
+#body table.BOXTABLE td[rowspan]:first-child + td,
+#body td.detail table.sa_rules_report thead ~ tbody td,
+#body #message-info table.sa_rules_report thead ~ tbody td,
+#body table.details_inside thead ~ tbody td {
+	padding-left: 5px;
+}
+
+table.mail td:last-child,
+table.BOXTABLE td:last-child {
+	padding-right: 5px;
+}
+
+.mail > tbody > tr > td,
+table.maildetail  > tbody > tr > td,
+table.BOXTABLE > tbody > tr > td,
+#nettabs form td,
+#locrbltabs form td,
+#detailtabs td,
+.report-table td,
+.details_inside td {
+	height: 24px;
+	vertical-align: middle;
+}
+
+#message-info td {
+	height: 30px;
+}
+
+td.heading {
+	font-weight: bold;
+	padding-right: 1em;
+}
+
+/* Health status page */
+.health-container td > div {
+	display: inline-block;
+}
+
+.health-container td > div.status-title {
+	width: 30%;
+	font-size: 12px;
+}
+
+.health-container td > div.status-title ~ div {
+	padding: 6px 10px;
+	margin-bottom: 5px;
+}
+
+/* Track mail page*/
+table#bg {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+/* Message detail page */
+.sa_rules_report div.esvabutton {
+	display: inline-block;
+}
+
+#message-info {
+	margin-top: 1.5em;
+}
+
+#message-info ul {
+	list-style: none;
+	padding: 0;
+}
+
+#message-info li {
+	display: inline-block;
+	width: 47%;
+	font-size: 13px;
+	padding-right: 20px;
+}
+
+#message-info li:last-child {
+	width: 94%;
+	padding-top: 20px;
+}
+
+#message-info span{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#message-info input {
+	width: 100%;
+	padding: 3px 6px;
+}
+
+#detail-status {
+	margin: 15px auto;
+    font-size: 12px;
+    background-color: #ebebeb;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+	width: 97%;
+}
+
+#detail-status > div{
+	float: left;
+	width: 74%;
+}
+
+#detail-status > div:last-child {
+	float: right;
+	width: 25%;
+}
+
+div.status-box {
+	width: 130px;
+	height: 130px;
+	border-radius: 65px;
+	margin: 0 auto 10px;
+	padding-top: 20px;
+}
+
+div.zero-height {
+	min-height: 0px;
+}
+
+div.half-height {
+	min-height: 8px;
+}
+
+div.full-height {
+	min-height: 14px;
+}
+
+div.highlighted-score {
+	font-size: 30px;
+}
+
+.status-field, .highlighted-score, .virus-field, .delivery-field {
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.virus-field {
+	color: #b22;
+}
+
+div.delivery-field {
+	width: 120px;
+	display: block;
+	margin: 0 auto;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+/* UI custom rules */
+div.ui-accordion div.ui-corner-all, button.ui-corner-all {
+    border-radius: 4px;
+}
+
+div.ui-widget {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+tr.dgRowsaltTR, tr.dgRowsnormTR {
+	background-color: #ffffff;
+}
+
+#body div.ui-tabs li.ui-state-active,
+#body div.ui-tabs.ui-widget-content li.ui-state-active,
+#body ul.ui-tabs-nav.ui-widget-header li.ui-state-active {
+	background: none;
+    background-color: #fcfcfc;
+	border-bottom: 1px solid #fcfcfc;
+}
+
+#body ul.ui-tabs-nav.ui-widget-header {
+	border: 0;
+	border-bottom: 1px solid #aaaaaa;	
+	border-radius: 0;
+}
+
+/* Text field */
+.textfieldRequiredState span.textfieldRequiredMsg,
+.textfieldInvalidFormatState span.textfieldInvalidFormatMsg,
+.textfieldMinValueState span.textfieldMinValueMsg,
+.textfieldMaxValueState span.textfieldMaxValueMsg,
+.textfieldMinCharsState span.textfieldMinCharsMsg,
+.textfieldMaxCharsState span.textfieldMaxCharsMsg {
+    border: 0;
+}
+
+/* Old rules
+#navbar {
+	width:auto;
+	height:36px;
+	background:url(img/navbar-bg.png) left top repeat-x;
+}
+
+#navbar .inbar {
+	display:block;
+	height:36px;
+	background:url(img/right-round.png) right top no-repeat;
+}
+
+#navbar ul, #navbar ul li {
+	border:0px;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	height:36px;
+	line-height:36px;
+}
+
+#navbar ul {
+	background:url(img/left-round.png) left top no-repeat;
+}
+
+#navbar ul li {
+	float:left;
+	display:block;
+	line-height:36px;
+}
+
+#navbar ul li a {
+	color:#237AB2;
+	text-decoration:none;
+	font-weight:bold;
+	display:block;
+}
+
+#navbar ul li a span {
+	padding:0 20px 0 0;
+	height:36px;
+	line-height:36px;
+	display:block;
+	margin-left:20px;
+}
+
+#navbar .navhome a, #navbar .navhome a:hover {
+	background:url(img/a-bg.png) left top no-repeat;
+	height:36px;
+	line-height:36px;
+}
+
+#navbar .navhome a span, #navbar .navhome a:hover span {
+	color:#FFFFFF;
+	background:url(img/span-bg.png) right top no-repeat;
+	height:36px;
+	line-height:36px;
+}
+
+#navbar ul li a:hover {
+	background:url(img/ahover-bg.png) left top no-repeat;
+	height:36px;
+	line-height:36px;
+}
+#navbar ul li a:hover span {
+	background:url(img/spanhover-bg.png) right top no-repeat;
+	height:36px;
+	line-height:36px;
+}
+*/
